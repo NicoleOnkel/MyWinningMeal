@@ -1,4 +1,5 @@
 Link to Github repository: https://github.com/NicoleOnkel/MyWinningMeal
+Link to YouTube video: https://youtu.be/0Lki25GU4DM
 
 
 # MyWinningMeal
@@ -16,3 +17,6 @@ Reset Button: User can click reset button to clear input box and suggestion disp
 
 
 An Error Message will display if the user makes a typing error or type in the wrong word.
+
+
+
