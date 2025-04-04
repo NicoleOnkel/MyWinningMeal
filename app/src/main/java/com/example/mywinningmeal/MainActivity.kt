@@ -1,51 +1,35 @@
 package com.example.mywinningmeal
 
 import android.os.Bundle
-import android.widget.EditText
-import android.widget.Switch
-import android.widget.ToggleButton
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.result.contract.ActivityResultContracts.PickVisualMedia.DefaultTab.AlbumsTab.value
-import androidx.collection.emptyLongSet
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Button
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextField
-import androidx.compose.material3.TextFieldColors
-import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color.Companion.Blue
-import androidx.compose.ui.graphics.Color.Companion.Green
-import androidx.compose.ui.res.stringArrayResource
+import androidx.compose.ui.graphics.Color.Companion.Magenta
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight.Companion.Bold
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.mywinningmeal.ui.theme.MyWinningMealTheme
-import kotlin.reflect.KProperty
 
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
+            
 
             var userInput by remember {
                 mutableStateOf("")
@@ -61,7 +45,6 @@ class MainActivity : ComponentActivity() {
             }
 
 
-
             Column (
                 horizontalAlignment = Alignment.CenterHorizontally,
                 modifier = Modifier.fillMaxSize()
@@ -74,6 +57,7 @@ class MainActivity : ComponentActivity() {
                     text = "My Winning Meal",
                     fontSize = 40.sp,
                     fontWeight = Bold,
+                    color = Magenta
 
                 )
                 Spacer(modifier = Modifier.size(30.dp))
@@ -98,11 +82,8 @@ class MainActivity : ComponentActivity() {
                     onValueChange = {text -> userInput = text},
 
                     placeholder = {
-                        Text(text = "You can now type in the meal time you want!")
+                        Text(text = "You can type in the time of day you want!")
                     },
-
-
-
 
 
 
@@ -149,8 +130,13 @@ class MainActivity : ComponentActivity() {
                 }
                 
                 
-                Row {
-                    Text(text = mealSuggestion)
+                Box(modifier = Modifier.align(Alignment.CenterHorizontally)) {
+                    Text(text = mealSuggestion,
+                        fontSize = 25.sp,
+                        fontWeight = Bold,
+                        color = Magenta,
+
+                    )
 
                     Spacer(modifier = Modifier.size(100.dp))
 
@@ -163,7 +149,7 @@ class MainActivity : ComponentActivity() {
                 )
                 {
                     Text(text = howTo,
-                        fontSize = 20.sp,
+                        fontSize = 18.sp,
                         fontStyle = FontStyle.Italic)
                 }
 
@@ -171,11 +157,8 @@ class MainActivity : ComponentActivity() {
 
                 //The how to button that will give the user instructions on how to use the App
                 Column{
-
-
                     Button(onClick = { /*TODO*/
                         howTo = "Hi Hera. Type the meal time(Morning, Morning Snack, Afternoon, Afternoon Snack,Evening, Evening Snack) and click on Suggest Button"
-
 
                     }) {
                         Text(text = "How to")
@@ -183,18 +166,12 @@ class MainActivity : ComponentActivity() {
 
                 }
 
-
-
-
-                }
-
-
-
-
-                }
-
             }
+
         }
+
+    }
+}
 
 
 
