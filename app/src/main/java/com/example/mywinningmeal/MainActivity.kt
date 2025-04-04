@@ -61,8 +61,7 @@ class MainActivity : ComponentActivity() {
 
                 )
                 Spacer(modifier = Modifier.size(30.dp))
-
-//Welcome Message to Hera
+                // Greeting Message to Hera
                 Text(text = "Hi Hera!",
                     fontSize = 20.sp)
                 
@@ -109,14 +108,12 @@ class MainActivity : ComponentActivity() {
                     }
                     )
 
-
-
                     {
                         Text(text = "Suggestion")
 
                     }
 
-                    Spacer(modifier = Modifier.size(200.dp))
+                    Spacer(modifier = Modifier.size(140.dp))
 
 
                     // Clearing the users input
@@ -138,7 +135,7 @@ class MainActivity : ComponentActivity() {
 
                     )
 
-                    Spacer(modifier = Modifier.size(100.dp))
+                    Spacer(modifier = Modifier.size(150.dp))
 
 
 
@@ -158,7 +155,7 @@ class MainActivity : ComponentActivity() {
                 //The how to button that will give the user instructions on how to use the App
                 Column{
                     Button(onClick = { /*TODO*/
-                        howTo = "Hi Hera. Type the meal time(Morning, Morning Snack, Afternoon, Afternoon Snack,Evening, Evening Snack) and click on Suggest Button"
+                        howTo = "Hi Hera. Type the meal time(Morning, Morning Snack, Afternoon, Afternoon Snack,Evening, Evening Snack) and click on Suggest Button'. And Error message will display if the input is typed wrong."
 
                     }) {
                         Text(text = "How to")
