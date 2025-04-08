@@ -1,4 +1,5 @@
 Link to Github repository: https://github.com/NicoleOnkel/MyWinningMeal
+
 Link to YouTube video: https://youtu.be/0Lki25GU4DM
 
 
@@ -10,7 +11,7 @@ Main objective:
  The use will type in the time of day in the input box, click the suggest button and a meal suggestion will on the screen.
 
  
-The UI consist of:
+**The UI consist of:**
 Input box: User will type in the time of day
 Suggest Button: User will click the button after typing the time of day to display meal suggestion.
 Reset Button: User can click reset button to clear input box and suggestion display
@@ -18,7 +19,7 @@ Reset Button: User can click reset button to clear input box and suggestion disp
 
 An Error Message will display if the user makes a typing error or type in the wrong word.
 
-Images from App
+**Images from App**
 ![Screenshot_2025 04 04_23 10 29 575](https://github.com/user-attachments/assets/8a53d77d-cc96-424e-a22a-0d74f0c942c5)
 
 ![Screenshot_2025 04 04_23 10 43 543](https://github.com/user-attachments/assets/9081b059-d93e-46bf-8f34-e7ef63c3364c)
@@ -29,6 +30,5 @@ Images from App
 
 
 
-#Referencing
-
-https://google.github.io/styleguide/docguide/READMEs.html Accessed 08.04.2025
+**Referencing**
+Github(2025)Quickstart for writing on GitHub. Available at: ttps://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github(Accessed: 08.04.2025)
