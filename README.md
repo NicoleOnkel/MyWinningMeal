@@ -31,4 +31,6 @@ An Error Message will display if the user makes a typing error or type in the wr
 
 
 **Referencing**
-Github(2025)Quickstart for writing on GitHub. Available at: ttps://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github(Accessed: 08.04.2025)
+Github(2025)Quickstart for writing on GitHub. Available at: ttps://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github (Accessed: 08.04.2025)
+
+Google for developers Develop UI for Android. Available at: https://developer.android.com/develop/ui (Accessed: 03.04.2025)
